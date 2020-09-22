@@ -1,0 +1,13 @@
+{
+    "name": "niltonmorais/carrinho1",
+    "authors": [
+        {
+            "name": "NiltonMorais",
+            "email": "nilton_even@hotmail.com"
+        }
+    ],
+    "require": {
+        "paypal/rest-api-sdk-php": "*",
+        "silex/silex": "~2.0"
+    }
+}

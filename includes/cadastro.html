@@ -1,0 +1,99 @@
+<div class="modal-header">
+<button type="button" class="close" data-dismiss="modal">&times;</button>
+<h4 class="modal-title"></h4>
+</div>
+<div class="modal-body bx-rec" id="cmregister" rel="600px" >
+
+<h2>Faça seu cadastro</h2>
+ 
+
+<form id="registro" class="fregistro" method="POST" style="padding: 2px 40px;">
+
+  <div class="alert alert-danger" style="display:none" role="alert"><button class="close" type="button" data-dismiss="alert" aria-hidden="true">×</button><strong>Oops... </strong> <span class="warn"></span>
+  </div>
+
+<div class="row">
+
+<div class="col-md-12">
+ 
+
+  <div class="form-group row">
+    <div class="col-sm-12">
+      <input type="text" required  name="nome" class="form-control" placeholder="Nome" id="nome" >
+    </div>
+  </div>
+  <div class="form-group row">
+    <div class="col-sm-12">
+      <input type="text" required name="sobrenome" class="form-control" id="sobrenome"   placeholder="Sobrenome">
+    </div>
+  </div>
+   <div class="form-group row">
+    <div class="col-sm-12">
+      <input type="text"  required name="cpf"  class="form-control numbersOnly cpf" id="cpf" placeholder="Cpf"  >
+    </div>
+  </div>
+  <div class="form-group row">
+    <div class="col-sm-12">
+      <input type="text" required class="form-control" id="endereco" name="endereco"  placeholder="Endereço">
+    </div>
+  </div>
+
+  <div class="form-group row">
+    <div class="col-sm-12">
+      <input type="email"  required class="form-control" name="email" id="email"  placeholder="E-mail">
+    </div>
+  </div>
+  <div class="form-group row">
+    <div class="col-sm-12">
+      <input type="text" required class="form-control telefone" name="celular" id="celular"   placeholder="Celular" >
+    </div>
+  </div>
+
+</div>
+
+<div class="col-md-12">
+  <div class="form-group row">
+    <div class="col-sm-12">
+      <input type="password" required  class="form-control" name="senha" id="senha"  placeholder="Senha">
+    </div>
+  </div>
+  <div class="form-group row">
+    <div class="col-sm-12">
+      <input type="password" required  class="form-control" name="senha2" id="senha2" placeholder="Repita a senha" >
+    </div>
+  </div>
+
+   <div class="form-group row">
+   <div class="col-sm-12">
+   <input type="submit" value="CADASTRAR" class="form-control subm" style="float:right; margin-top:20px;"/>
+   </div>
+   </div>
+</div>
+
+</div>
+</form>
+
+
+</div>
+ <script>
+ $(function(){
+       $('form#registro').on('submit', function(e){
+
+       $('.alert').show();
+       $('.alert span').html('<div style="text-align:center"><p><img src="'+U+'assets/loader.gif" /></p></div>');
+
+      e.preventDefault();
+      $.post(U+'ajax.php', 
+         $('form#registro').serialize(), 
+         function(data, status, xhr){
+            if(data == 1){
+                $('#cmregister').html('<div style="text-align:center"><p>Seu cadastro foi realizado!</p><p><button class="btn btn-success" data-dismiss="modal">ok</button></p></div>');
+            }else{
+              $('.alert').show();
+              $('.alert span').html(data);
+            }
+         });
+    });
+   });
+ </script>
+<script src="../assets/js/cmask.js"></script>

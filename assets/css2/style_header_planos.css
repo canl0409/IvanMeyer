@@ -1,0 +1,230 @@
+
+/*---------------------
+  Header
+-----------------------*/
+.header-section {
+  padding-top: 35px;
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  z-index: 99;
+}
+
+.header-section.header-normal {
+  position: relative;
+  padding-top: 0;
+}
+
+.header-section.header-normal .logo {
+  padding: 35px 0;
+}
+
+.header-section.header-normal .nav-menu .mainmenu ul li {
+  margin-right: 45px;
+}
+
+.header-section.header-normal .nav-menu .mainmenu ul li.active a {
+  color: #f34e3a;
+}
+
+.header-section.header-normal .nav-menu .mainmenu ul li a {
+  color: #191919;
+  padding: 33px 5px;
+  -webkit-transition: 0.2s;
+  -o-transition: 0.2s;
+  transition: 0.2s;
+}
+
+.header-section.header-normal .nav-menu .mainmenu ul li:hover .dropdown {
+  top: 100px;
+}
+
+.header-section.header-normal .nav-menu .mainmenu ul li:hover>a {
+  color: #f34e3a;
+}
+
+.header-section.header-normal .nav-menu .mainmenu ul li .dropdown {
+  top: 90px;
+}
+
+.header-section.header-normal .nav-menu .mainmenu ul li .dropdown li a {
+  padding: 10px 20px;
+  color: #ffffff;
+}
+
+.header-section.header-normal .nav-menu .mainmenu ul li .dropdown li a:hover {
+  color: #252525;
+}
+
+.header-section.header-normal .nav-menu .nav-right {
+  padding: 39px 0;
+}
+
+.header-section.header-normal .nav-menu .nav-right i {
+  color: #191919;
+}
+
+.logo {
+  float: left;
+  left: auto !important;
+  top: 25px;
+}
+
+.logo a {
+  display: inline-block;
+}
+
+.nav-menu {
+  text-align: right;
+}
+
+.nav-menu .mainmenu {
+  display: inline-block;
+}
+
+.nav-menu .mainmenu ul li {
+  display: inline-block;
+  list-style: none;
+  margin-right: 45px;
+  position: relative;
+}
+
+.nav-menu .mainmenu ul li.active a {
+  color: #f34e3a;
+}
+
+.nav-menu .mainmenu ul li a {
+  color: #ffffff;
+  font-size: 16px;
+  text-transform: uppercase;
+  font-weight: 500;
+  line-height: 20px;
+  -webkit-transition: 0.2s;
+  -o-transition: 0.2s;
+  transition: 0.2s;
+  display: block;
+  font-family: "Oswald", sans-serif;
+}
+
+.nav-menu .mainmenu ul li:hover .dropdown {
+  opacity: 0.97;
+  visibility: visible;
+  top: 30px;
+}
+
+.nav-menu .mainmenu ul li:hover>a {
+  color: #f34e3a;
+}
+
+.nav-menu .mainmenu ul li .dropdown {
+  position: absolute;
+  left: 0;
+  top: 20px;
+  width: 200px;
+  background: #f34e3a;
+  opacity: 0;
+  visibility: hidden;
+  -webkit-transition: all 0.3s;
+  -o-transition: all 0.3s;
+  transition: all 0.3s;
+  z-index: 99;
+}
+
+.nav-menu .mainmenu ul li .dropdown li {
+  display: block;
+  margin-right: 0;
+}
+
+.nav-menu .mainmenu ul li .dropdown li a {
+  text-align: left;
+  text-transform: capitalize;
+  padding: 10px 20px;
+  color: #ffffff;
+}
+
+.nav-menu .mainmenu ul li .dropdown li a:hover {
+  color: #252525;
+}
+
+.nav-menu .mainmenu ul li:last-child .dropdown {
+  left: auto;
+  right: 0;
+}
+
+.nav-menu .nav-right {
+  display: -webkit-inline-box;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  margin-left: 20px;
+}
+
+.nav-menu .nav-right i {
+  color: #ffffff;
+  cursor: pointer;
+}
+
+.slicknav_menu {
+  display: none;
+}
+
+@media only screen and (min-width: 1200px){
+.container {
+    max-width: 1170px !important;
+}
+}
+
+@media only screen and (max-width: 767px){
+.nav-menu .mainmenu {
+    display: none;
+}
+.slicknav_menu {
+    display: block;
+    background: transparent;
+    padding: 0;
+        top: 70px;
+}
+ .slicknav_menu {
+    display: block;
+    background: transparent;
+    padding: 0;
+  }
+
+  .nav-menu .mainmenu {
+    display: none;
+  }
+
+  .nav-menu {
+    position: relative;
+  }
+
+  .nav-right {
+    position: absolute;
+    right: 110px;
+    top: 7px;
+  }
+
+  .slicknav_btn {
+    margin: 0;
+  }
+
+  .slicknav_nav {
+    padding: 15px 10px;
+    background: #222;
+  }
+
+  .slicknav_nav a {
+    padding: 10px 10px;
+    margin: 0;
+  }
+
+  .slicknav_nav a:hover {
+    border-radius: 0;
+    background: #f34a3a;
+    color: #fff;
+  }
+
+  .slicknav_nav ul {
+    margin: 0;
+  }
+}

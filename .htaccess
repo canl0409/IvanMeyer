@@ -1,0 +1,12 @@
+Options +FollowSymlinks
+Options -Indexes
+RewriteEngine On
+php_value memory_limit 36M
+php_value post_max_size 36M
+php_value upload_max_filesize 32M
+RewriteCond %{REQUEST_FILENAME} !-f
+RewriteCond %{REQUEST_FILENAME} !-d
+RewriteRule ^(.*)$ index.php?q=1 [L]
+
+#RewriteCond %{HTTPS} off
+#RewriteRule (.*) https://%{SERVER_NAME}/$1 [R,L]

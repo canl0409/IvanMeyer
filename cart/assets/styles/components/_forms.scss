@@ -1,0 +1,47 @@
+.formulario {
+
+	padding: 5px;
+
+	a {
+		color: white;
+		text-decoration: none;
+		a:hover {
+			color: white;
+		}
+	}
+	
+	small {
+		padding: 10px;
+		font-size: 10px;
+	}
+	p {
+		font-size: 20px;
+		display: inline-block;
+		font-weight: bold;
+	}
+
+	.btn {
+		border-radius: 0px;	
+		padding-left: 50px;
+		padding-right: 50px;
+	}
+
+	hr {
+		color: blue;
+	}
+
+	.form-row {
+		padding: 5px;
+	}
+
+	label {
+		color: #8E9FB4;
+		font-size: 12px;
+		text-transform: uppercase;
+	}
+	.form-control {
+		border-radius: 0px;
+		height: 40px;
+		border: 0px;
+	}
+}

@@ -1,0 +1,24 @@
+// Small devices (landscape phones, less than 768px)
+@media (max-width: 767.98px) {
+    .title {
+        font-size: 30px;
+        padding: 20px 10px;
+        text-align: center;
+        display: flex;
+        flex-direction: column;
+        width: min-content;
+        margin: auto;
+
+        &::before {
+            content: url('/assets/img/faixa-azul.webp');
+            text-align: center;
+            margin-bottom: -10px;
+        }
+
+        &::after {
+            content: url('/assets/img/faixa-azul.webp');
+            text-align: center;
+            margin-top: 10px;
+        }
+    }
+}

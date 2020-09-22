@@ -1,0 +1,81 @@
+.card-header {
+	padding: 1.6rem 1.25rem;
+	border: 0px;
+    width: 80%;
+	margin: auto;
+	margin-bottom: -15px;
+    background-color: white;
+
+    h4 {
+	    font-weight: bold; 
+	 	color: #8e9fb4;   	
+    }
+
+}
+
+.card {
+	color: #79868e;
+	border: 0px;
+    width: 80%;
+    margin: auto;
+    margin-bottom: -15px;
+    background-color: white;
+
+    .quantidade {
+    	text-align: center;
+    	width: 40px;
+    }
+    																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																	
+	h5 {
+		color: #8E9FB4; 
+		font-weight: bold;
+	}
+	h4 {
+		color: #8E9FB4; 
+		font-weight: bold;
+	}
+
+	.card-info {
+
+	}
+
+	.planoInfo {
+		color: #79868e;
+
+		ul {
+			list-style-type: none; 
+			padding: 30px;
+
+			.planoInfo-item {
+
+				strong {
+
+					    color: #48bb78;
+					    font-weight: lighter;
+					    text-align: center;
+					    .planoInfo-numero {
+							width: 70px;
+					    }
+					
+				}
+
+			}
+		}
+	}
+
+}
+
+.total {
+	
+	border: 0px;
+    width: 80%;
+	margin: auto;
+	margin-bottom: -15px;
+    background-color: white;
+
+	h4 {
+		padding: 20px;
+		font-weight: bold;
+    	color: #8e9fb4;
+	}
+}

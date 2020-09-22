@@ -1,0 +1,25 @@
+.btn-tema {
+    background-color: $azul-tema;
+    padding: 11px 30px;
+    height: 47px;
+    border: none;
+    border-radius: 23.5px;
+    color: #fff;
+
+    &:hover {}
+}
+
+.btn-branco {
+    background-color: #fff;
+    padding: 11px 30px;
+    height: 47px;
+    border: none;
+    border-radius: 23.5px;
+    color: $azul-tema;
+    font-size: initial;
+}
+
+.img-logo-footer {
+    height: 46px;
+    width: auto;
+}

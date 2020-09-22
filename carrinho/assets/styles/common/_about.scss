@@ -1,0 +1,12 @@
+.botao {
+  background: white;
+  color: blue;
+  &:hover {
+    background: gray;
+    color: red;
+    &:active {
+      background: red;
+      color: white;
+}
+}
+}

@@ -1,0 +1,137 @@
+#modal {
+    z-index: 9999999;
+}
+
+.fade {
+    opacity: 1 !important;
+    transition: opacity .15s linear;
+    background-color: rgba(0, 0, 0, 0.7);
+}
+
+.modal-header {
+    padding: 15px;
+    border-bottom: 1px solid #fff !important;
+}
+
+.modal-content {
+    margin-top: 200px !important;
+}
+
+#modal h2 {
+    text-align: center;
+    color: #333;
+    margin-top: -23px;
+    margin-bottom: 30px;
+    font-size: 26px;
+    font-weight: bold;
+}
+
+#modal form label {
+    font-size: 13px;
+}
+
+#modal form input {}
+
+#modal form input[type="submit"] {
+    color: #fff;
+    background-color: #c9302c;
+    border-color: #ac2925;
+    font-weight: bold;
+}
+
+.modalbt {
+    font-size: 13px;
+    margin-bottom: 10px;
+}
+
+#modal a {
+    color: #111 !important;
+}
+
+.content-modal-lista-cursos {
+    top: 50px;
+    border-radius: 6px;
+    border: 1px solid #ccc;
+    background-color: rgba(250, 250, 250, 0.9);
+    padding: 13px;
+}
+
+/* Reset border-radius */
+.well,
+.label,
+.alert,
+.progress,
+.form-control,
+.modal-content,
+.panel-heading,
+.panel-group .panel,
+.nav-tabs>li>a,
+.nav-pills>li>a {
+    border-radius: 2px;
+}
+
+.owl-carousel,
+.owl-carousel .owl-stage-outer,
+.owl-carousel .owl-stage,
+.owl-carousel .owl-item {
+    height: auto !important;
+}
+
+.mfp-close {
+    width: auto !important;
+}
+
+.mfp-close:hover {
+    background: none !important;
+    color: none !important;
+}
+
+.row-slider-cursos {
+    display: block !important;
+    flex-wrap: wrap;
+    margin-right: -15px;
+    margin-left: -15px;
+}
+
+.thim-course-grid-home .course-item .thim-course-content {
+    background: #fff !important;
+}
+
+.thim-course-grid-home .course-item .thim-course-content a {
+    color: rgb(51, 51, 51) !important;
+}
+
+.slick-next {
+    margin-right: -40px !important;
+}
+
+.slick-prev {
+    margin-left: -40px !important;
+}
+
+
+.cursos-acessados {
+    background: #eee;
+    padding: 25px 0px;
+}
+
+.cursos-acessados div img {
+    margin-top: 30px;
+    cursor: pointer;
+}
+
+.cursos-acessados div img:hover {
+    opacity: 0.9;
+}
+
+.module-subtitle {
+    text-align: center;
+    font-size: 16px;
+    color: #999;
+    margin-bottom: 50px;
+    /*font-family:'Conv_DSari-Medium_0',Sans-Serif !important;*/
+}
+
+.large-text {
+    font-size: 24px !important;
+}

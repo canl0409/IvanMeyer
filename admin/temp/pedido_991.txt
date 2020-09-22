@@ -1,0 +1,18 @@
+991-Pedido confirmado por: Mister Pizza
+Telefone: (27) 3200-3940
+Tempo de entrega: Segunda a Quinta 60
+minutos e Sexta a Domingo 110 minutos.
+-----------------------------------
+Cliente: Abram sobrenome
+Endereço da entrega: Cliente vai
+retirar no local.
+Telefone: (44) 9853-4443
+Pagamento: Mastercard
+Observações : 
+ 
+Produto                       Qtd  Total
+Mussarela - Media               1R$27.90
+
+
+                      Sub-Total: R$27.90
+                          Total: R$27.90

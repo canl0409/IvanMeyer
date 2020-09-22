@@ -1,0 +1,20 @@
+Pedido confirmado por: Mister Pizza
+Telefone: (27) 3200-3940
+Tempo de entrega: Segunda a Quinta 60
+minutos e Sexta a Domingo 110 minutos.
+-----------------------------------
+Cliente: Abram sobrenome
+Endereço da entrega: av reta da penha
+1440Ap. 161 - barro vermelho -
+maringa-es 29101-784
+Telefone: (44) 9853-4443
+Pagamento: Dinheiro - Pagamento exato
+Observações : 
+ 
+Produto                       Qtd  Total
+Cheddar Fries - Meia Porca      1 R$9.50
+Homemade Onion Rings - Mei      1 R$8.00
+
+
+                      Sub-Total: R$17.50
+                          Total: R$17.50

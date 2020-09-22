@@ -1,0 +1,20 @@
+CREATE TABLE `pagamentos` (
+  `pagamentoId` int(11) NOT NULL AUTO_INCREMENT,
+  `code` varchar(32) NOT NULL DEFAULT '0',
+  `alunoId` int(11) NOT NULL DEFAULT '0',
+  `email_consumidor` varchar(128) DEFAULT NULL,
+  `cursoId` int(11) DEFAULT '0',
+  `planoId` int(11) DEFAULT '0',
+  `produto` varchar(128) DEFAULT '0',
+  `data` datetime DEFAULT CURRENT_TIMESTAMP ON UPDATE CURRENT_TIMESTAMP,
+  `valor` decimal(10,2) DEFAULT '0.00',
+  `valor_error` varchar(32) DEFAULT '0.00',
+  `cod_moip` varchar(32) DEFAULT NULL,
+  `tipo_pagamento` varchar(32) DEFAULT NULL,
+  `forma_pagamento` tinyint(2) DEFAULT '0',
+  `status_pagamento` tinyint(2) DEFAULT NULL,
+  `status` tinyint(2) DEFAULT NULL,
+  `log` text,
+  PRIMARY KEY (`pagamentoId`),
+  KEY `pagamentoId` (`pagamentoId`)
+) ENGINE=InnoDB DEFAULT CHARSET=utf8

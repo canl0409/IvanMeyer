@@ -1,0 +1,2 @@
+ALTER TABLE `planos`
+	ADD COLUMN `parcelas` MEDIUMINT(5) NULL DEFAULT NULL AFTER `valor`;

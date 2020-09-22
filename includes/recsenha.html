@@ -1,0 +1,49 @@
+<div class="modal-header">
+<button type="button" class="close" data-dismiss="modal">&times;</button>
+</div>
+<div class="modal-body" id="cmregister" rel="600px">
+
+<h2>Recuperação de senha</h2>
+
+
+
+<form id="frecuperasenha" class="fregistro" method="POST" " style="padding: 2px 40px;"  >
+
+  <div class="alert alert-danger" style="display:none" role="alert"><button class="close" type="button" data-dismiss="alert" aria-hidden="true">×</button><strong></strong> <span class="warn"></span>
+  </div>
+
+<div class="row">
+<div class="col-md-12">
+  <div class="form-group row">
+    <div class="col-sm-12">
+      <input type="email" required  name="reqmail" class="form-control" id="reqmail" placeholder="E-mail de cadastro" >
+    </div>
+  </div>
+    <div class="form-group row">
+   <div class="col-sm-12">
+   <input type="submit" value="recuperar" class="form-control subm" style="float:right; margin-top:20px;"/>
+   </div>
+   </div>
+</div>
+</div>
+</form>
+</div>
+<script>
+  $(function(){
+
+    $('#frecuperasenha').on('submit', function(e){
+       $('.alert').show();
+       $('.alert span').html('<div style="text-align:center"><p><img src="'+U+'assets/loader.gif" /></p></div>');
+
+      e.preventDefault();
+      $.post(U+'ajax.php', 
+          {reqmail:$('#reqmail').val()},  
+         function(data, status, xhr){
+               $('.alert').show();
+              $('.alert span').html(data);
+            
+         });
+    });
+
+});
+</script>
