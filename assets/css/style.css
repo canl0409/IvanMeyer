@@ -98,13 +98,10 @@
   transition: all 200ms linear;
 }
 
-.nav-item:hover:after {
+.nav-item:hover:after,
+.nav-item.active:after {
   bottom: 5px;
   opacity: 1;
-}
-
-.nav-item.active:hover:after {
-  opacity: 0;
 }
 
 .nav-item {
@@ -156,9 +153,16 @@
   font-size: initial;
 }
 
-.img-logo-footer {
-  height: 46px;
-  width: auto;
+.btn-outline-branco {
+  background-color: transparent;
+  padding: 11px 30px;
+  height: 47px;
+  border: none;
+  border-radius: 23.5px;
+  color: #fff;
+  border: 1px solid #fff;
+  font-size: initial;
+  outline: none;
 }
 
 body {
@@ -192,6 +196,21 @@ body {
   margin-right: -80px;
 }
 
+.newsletter {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 220px;
+  width: 100%;
+  background: linear-gradient(90.95deg, #1257B9 0%, #06D6A0 100%);
+}
+
+.newsletter input[type=email] {
+  height: 47px;
+  border-radius: 23.5px;
+  padding: 0 2rem;
+}
+
 footer {
   background-color: #0D1B2A;
   color: rgba(255, 255, 255, 0.6);
@@ -199,6 +218,11 @@ footer {
 
 footer hr {
   border-top: 1px solid rgba(255, 255, 255, 0.3);
+}
+
+footer .img-logo-footer {
+  height: 46px;
+  width: auto;
 }
 
 @media (max-width: 767.98px) {
@@ -221,4 +245,84 @@ footer hr {
     text-align: center;
     margin-top: 10px;
   }
+}
+
+section.video-curso {
+  background-color: #FAFAFB;
+  padding: 5rem 0;
+}
+
+section.video-curso::before {
+  content: url("/assets/img/faixa-verde.webp");
+  margin-top: -7rem;
+  position: absolute;
+  left: 0;
+}
+
+section.video-curso::after {
+  content: url("/assets/img/faixa-verde.webp");
+  margin-top: 2.7rem;
+  position: absolute;
+  right: 1rem;
+}
+
+section.video-curso #videoApresentacao {
+  max-width: 687.12px;
+  margin: auto;
+}
+
+section.tabela-curso {
+  padding: 5rem 0;
+}
+
+section.tabela-curso input[type=radio].radio-nivel {
+  display: none;
+}
+
+section.tabela-curso input[type=radio].radio-nivel ~ label {
+  width: 100%;
+  height: 80px;
+  text-align: center;
+  border-radius: 50px;
+  background-color: #fff;
+  border: 1px solid;
+  cursor: pointer;
+  font-size: 22px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  opacity: 0.5;
+}
+
+section.tabela-curso input[type=radio].radio-nivel.nivel1 ~ label {
+  border-color: #00B2EA;
+  color: #00B2EA;
+}
+
+section.tabela-curso input[type=radio].radio-nivel.nivel2 ~ label {
+  border-color: #1DCD00;
+  color: #1DCD00;
+}
+
+section.tabela-curso input[type=radio].radio-nivel.nivel3 ~ label {
+  border-color: #FF862E;
+  color: #FF862E;
+}
+
+section.tabela-curso input[type=radio].radio-nivel.nivel4 ~ label {
+  border-color: #ED1C24;
+  color: #ED1C24;
+}
+
+section.tabela-curso input[type=radio]:checked.radio-nivel ~ label {
+  border-width: 5px;
+  font-weight: bold;
+  font-style: italic;
+  opacity: 1;
+}
+
+section.tabela-curso .tabela-aulas {
+  border: 1px solid #AAB8CA;
+  border-radius: 10px;
+  padding: 1rem 1rem 0 1rem;
 }

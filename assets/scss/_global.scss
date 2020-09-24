@@ -1,7 +1,5 @@
 body {
     font-family: 'Open Sans', sans-serif !important;
-    // font-family: 'PT Sans' !important;
-    // font-weight: 700;
 }
 
 .title {
@@ -28,5 +26,20 @@ body {
         text-align: right;
         margin-top: -20px;
         margin-right: -80px;
+    }
+}
+
+.newsletter {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 220px;
+    width: 100%;
+    background: linear-gradient(90.95deg, #1257B9 0%, #06D6A0 100%);
+
+    & input[type=email] {
+        height: 47px;
+        border-radius: 23.5px;
+        padding: 0 2rem;
     }
 }

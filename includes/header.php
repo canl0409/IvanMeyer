@@ -18,26 +18,26 @@
         <div class="container">
             <div class="row align-self-center">
                 <div class="col-12">
-                    <nav class="navbar navbar-expand-md navbar-light">
+                    <nav class="navbar navbar-expand-lg navbar-light">
                         <a class="navbar-brand" href="<?= URL_SITE ?>"><img src="<?= URL_IMG ?>/IvanMeyer.webp" alt=""></a>
                         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
                             <span class="navbar-toggler-icon"></span>
                         </button>
                         <div class="collapse navbar-collapse" id="navbarSupportedContent">
                             <ul class="navbar-nav ml-auto py-4 py-md-0">
-                                <li class="nav-item pl-4 pl-md-0 ml-0 ml-md-4">
+                                <li class="nav-item pl-4 pl-md-0 ml-0 ml-md-4 <?= $page === '' || $page === 'home' ? 'active' : '' ?>">
                                     <a class="nav-link" href="<?= URL_SITE ?>">Início</a>
                                 </li>
-                                <li class="nav-item pl-4 pl-md-0 ml-0 ml-md-4">
+                                <li class="nav-item pl-4 pl-md-0 ml-0 ml-md-4 <?= $page === 'aulas' ? 'active' : '' ?>">
                                     <a class="nav-link" href="<?= URL_SITE ?>/aulas">Aulas</a>
                                 </li>
-                                <li class="nav-item pl-4 pl-md-0 ml-0 ml-md-4">
+                                <li class="nav-item pl-4 pl-md-0 ml-0 ml-md-4 <?= $page === 'sobre' ? 'active' : '' ?>">
                                     <a class="nav-link" href="<?= URL_SITE ?>/sobre">Sobre</a>
                                 </li>
-                                <li class="nav-item pl-4 pl-md-0 ml-0 ml-md-4">
+                                <li class="nav-item pl-4 pl-md-0 ml-0 ml-md-4 <?= $page === 'contato' ? 'active' : '' ?>">
                                     <a class="nav-link" href="<?= URL_SITE ?>/contato">Contato</a>
                                 </li>
-                                <li class="nav-item pl-4 pl-md-0 ml-0 ml-md-4">
+                                <li class="nav-item pl-4 pl-md-0 ml-0 ml-md-4 <?= $page === 'area-aluno' ? 'active' : '' ?>">
                                     <a class="nav-link" href="<?= URL_SITE ?>/area-aluno">Área do aluno</a>
                                 </li>
                                 <li class="pt-4 pt-md-3 pl-3 pl-md-0 ml-0 ml-md-4">
@@ -51,7 +51,7 @@
         </div>
     </div>
 
-    <section class="banner d-none d-md-block">
+    <section class="banner d-none d-md-block" id="banner">
         <div id="carouselIndicators" class="carousel slide" data-ride="carousel">
             <ol class="carousel-indicators">
                 <li data-target="#carouselIndicators" data-slide-to="0" class="active"></li>

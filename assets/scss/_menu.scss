@@ -101,13 +101,10 @@
     transition: all 200ms linear;
 }
 
-.nav-item:hover:after {
+.nav-item:hover:after,
+.nav-item.active:after {
     bottom: 5px;
     opacity: 1;
-}
-
-.nav-item.active:hover:after {
-    opacity: 0;
 }
 
 .nav-item {
