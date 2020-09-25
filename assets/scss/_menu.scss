@@ -119,21 +119,3 @@
     background: #fff !important;
     transition: all 200ms linear;
 }
-
-.carousel-caption {
-    top: 50%;
-    transform: translateY(-50%);
-    bottom: auto;
-    font-size: 2em;
-    font-family: 'PT Sans', sans-serif;
-
-    h5 {
-        font-size: 2em;
-        font-weight: 700;
-    }
-}
-
-.carousel-item,
-.img-banner {
-    height: 500px;
-}

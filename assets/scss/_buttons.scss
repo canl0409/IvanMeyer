@@ -1,15 +1,17 @@
-.btn-tema {
+[type=button].btn-tema {
     background-color: $azul-tema;
     padding: 11px 30px;
     height: 47px;
     border: none;
     border-radius: 23.5px;
     color: #fff;
+    font-family: 'Open Sans', sans-serif;
+    outline: none;
 
     &:hover {}
 }
 
-.btn-branco {
+[type=button].btn-branco {
     background-color: #fff;
     padding: 11px 30px;
     height: 47px;
@@ -17,9 +19,11 @@
     border-radius: 23.5px;
     color: $azul-tema;
     font-size: initial;
+    outline: none;
+    font-family: 'Open Sans', sans-serif;
 }
 
-.btn-outline-branco {
+[type=button].btn-outline-branco {
     background-color: transparent;
     padding: 11px 30px;
     height: 47px;
@@ -29,4 +33,5 @@
     border: 1px solid #fff;
     font-size: initial;
     outline: none;
+    font-family: 'Open Sans', sans-serif;
 }

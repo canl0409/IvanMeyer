@@ -6,7 +6,7 @@
         <iframe class="embed-responsive-item" src="https://www.youtube.com/embed/UFw5aLZUl-8"></iframe>
     </div>
 </section>
-<section class="tabela-curso">
+<section class="tabela-curso mb-5 mt-4">
     <div class="container">
         <div class="row">
             <div class="col-12 col-md-6 col-lg-3">
@@ -39,7 +39,7 @@
             </div>
         </div>
         <div class="row mt-4">
-            <div class="col-12 col-lg-3">
+            <div class="col-12 col-lg-3 mb-4">
                 <div class="list-group" id="list-tab" role="tablist">
                     <a class="list-group-item list-group-item-action active" id="list-curso1-list" data-toggle="list" href="#list-curso1" role="tab" aria-controls="curso1">Curso 1</a>
                     <a class="list-group-item list-group-item-action" id="list-curso2-list" data-toggle="list" href="#list-curso2" role="tab" aria-controls="curso2">Curso 2</a>
@@ -100,10 +100,10 @@
 <section class="newsletter">
     <div class="container">
         <div class="row justify-content-center">
-            <div class="col-7">
+            <div class="col-12 col-md-7 my-2">
                 <input type="email" class="form-control w-100" name="email-newsletter" placeholder="Cadastre aqui seu e-mail para receber novidades...">
             </div>
-            <div class="col-2">
+            <div class="col-12 col-md-2 my-2">
                 <button type="button" class="btn-outline-branco">Cadastrar</button>
             </div>
         </div>

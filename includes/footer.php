@@ -36,7 +36,7 @@
       </div>
     </div>
     <div class="row">
-      <div class="col-6 col-md">
+      <div class="col-12 col-md">
         <hr>
         <small>
           Copyright &copy; IvanMeyer | Todos os direitos reservados.

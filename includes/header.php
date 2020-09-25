@@ -41,7 +41,7 @@
                                     <a class="nav-link" href="<?= URL_SITE ?>/area-aluno">Área do aluno</a>
                                 </li>
                                 <li class="pt-4 pt-md-3 pl-3 pl-md-0 ml-0 ml-md-4">
-                                    <button class="btn-tema">Matricule-se</button>
+                                    <button type="button" class="btn-tema btn-modal-login">Login</button>
                                 </li>
                             </ul>
                         </div>
@@ -53,45 +53,47 @@
 
     <section class="banner d-none d-md-block" id="banner">
         <div id="carouselIndicators" class="carousel slide" data-ride="carousel">
-            <ol class="carousel-indicators">
-                <li data-target="#carouselIndicators" data-slide-to="0" class="active"></li>
-                <li data-target="#carouselIndicators" data-slide-to="1"></li>
-                <li data-target="#carouselIndicators" data-slide-to="2"></li>
-            </ol>
             <div class="carousel-inner">
                 <div class="carousel-item active">
-                    <img src="<?= URL_IMG ?>/banner1.webp" class="img-banner" alt="Banner 1">
+                    <img src="<?= URL_IMG ?>/banner1.webp" alt="Banner 1">
                     <div class="carousel-caption">
-                        <p>Material didático e acompanhamento incluso</p>
+                        <p class="mb-0">Material didático e acompanhamento incluso</p>
                         <h5>AS MELHORES AULAS DE SAX</h5>
-                        <button class="btn-branco">Matricule-se</button>
+                        <button type="button" class="btn-branco mt-4">Matricule-se</button>
                     </div>
                 </div>
                 <div class="carousel-item">
-                    <img src="<?= URL_IMG ?>/banner3.webp" class="img-banner" alt="Banner 2">
+                    <img src="<?= URL_IMG ?>/banner3.webp" alt="Banner 2">
                     <div class="carousel-caption text-left">
-                        <p>Material didático e acompanhamento incluso</p>
+                        <p class="mb-0">Material didático e acompanhamento incluso</p>
                         <h5>AS MELHORES AULAS DE SAX</h5>
-                        <button class="btn-branco">Matricule-se</button>
+                        <button type="button" class="btn-branco mt-4">Matricule-se</button>
                     </div>
                 </div>
                 <div class="carousel-item">
-                    <img src="<?= URL_IMG ?>/banner2.webp" class="img-banner" alt="Banner 3">
+                    <img src="<?= URL_IMG ?>/banner2.webp" alt="Banner 3">
                     <div class="carousel-caption text-right">
-                        <p>Material didático e acompanhamento incluso</p>
+                        <p class="mb-0">Material didático e acompanhamento incluso</p>
                         <h5>AS MELHORES AULAS DE SAX</h5>
-                        <button class="btn-branco">Matricule-se</button>
+                        <button type="button" class="btn-branco mt-4">Matricule-se</button>
                     </div>
                 </div>
             </div>
-            <a class="carousel-control-prev" href="#carouselIndicators" role="button" data-slide="prev">
-                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-                <span class="sr-only">Previous</span>
-            </a>
-            <a class="carousel-control-next" href="#carouselIndicators" role="button" data-slide="next">
-                <span class="carousel-control-next-icon" aria-hidden="true"></span>
-                <span class="sr-only">Next</span>
-            </a>
+            <div class="container-indicator">
+                <ol class="carousel-indicators">
+                    <li data-target="#carouselIndicators" data-slide-to="0" class="active"></li>
+                    <li data-target="#carouselIndicators" data-slide-to="1"></li>
+                    <li data-target="#carouselIndicators" data-slide-to="2"></li>
+                </ol>
+                <a class="carousel-control-prev" href="#carouselIndicators" role="button" data-slide="prev">
+                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                    <span class="sr-only">Previous</span>
+                </a>
+                <a class="carousel-control-next" href="#carouselIndicators" role="button" data-slide="next">
+                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                    <span class="sr-only">Next</span>
+                </a>
+            </div>
         </div>
     </section>
 

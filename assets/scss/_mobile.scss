@@ -6,7 +6,7 @@
         text-align: center;
         display: flex;
         flex-direction: column;
-        width: min-content;
+        width: 200px;
         margin: auto;
 
         &::before {
@@ -19,6 +19,11 @@
             content: url('/assets/img/faixa-azul.webp');
             text-align: center;
             margin-top: 10px;
+            margin-bottom: 50px;
         }
+    }
+
+    .nav-item:after {
+        bottom: -10px !important;
     }
 }
