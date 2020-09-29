@@ -24,6 +24,7 @@ section.video-curso {
 
 section.tabela-curso {
     padding: 5rem 0;
+    color: $cinza;
 
     input[type=radio].radio-nivel {
         display: none;
@@ -64,10 +65,65 @@ section.tabela-curso {
         }
     }
 
+    .lista-cursos {
+        .list-group-item {
+            text-align: center;
+            border-color: #B5C0D1;
+            padding-top: 1rem;
+            padding-bottom: 1rem;
+
+            &.active {
+                z-index: 2;
+                color: $azul;
+                background-color: #fff;
+                border-color: #B5C0D1;
+                font-weight: 600;
+
+                &::after {
+                    font-family: "Font Awesome 5 Pro";
+                    font-weight: 400;
+                    content: '\f356';
+                    position: absolute;
+                    right: 15px;
+                }
+            }
+
+            &:first-child {
+                border-top-left-radius: 10px;
+                border-top-right-radius: 10px;
+            }
+
+            &:last-child {
+                border-bottom-right-radius: 10px;
+                border-bottom-left-radius: 10px;
+            }
+        }
+    }
+
     .tabela-aulas {
         border: 1px solid #AAB8CA;
         border-radius: 10px;
         padding: 1rem 1rem 0 1rem;
+
+        .table {
+            color: $cinza;
+
+            .nome-aula-tabela {
+                color: $cinza-escuro;
+            }
+
+            .badge-aulas-free {
+                background-color: $verde-tema;
+                color: #fff;
+                height: 30px;
+                border-radius: 10px;
+                text-align: center;
+                line-height: 30px;
+                font-size: 14px;
+            }
+
+        }
+
     }
 
 }

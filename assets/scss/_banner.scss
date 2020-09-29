@@ -46,15 +46,15 @@
 
     li {
         margin: auto;
-        width: 20px !important;
-        height: 20px !important;
+        width: 15px !important;
+        height: 15px !important;
         border-radius: 100%;
     }
 
     .active {
         opacity: 1 !important;
         background-color: #fff;
-        border: 7px solid rgba($color: #fff, $alpha: 0.5);
+        border: 5px solid rgba($color: #fff, $alpha: 0.5);
     }
 }
 
@@ -72,8 +72,8 @@
 .carousel-control-prev {
     position: relative !important;
     z-index: 1 !important;
-    height: 40px !important;
-    width: 40px !important;
+    height: 30px !important;
+    width: 30px !important;
     color: #fff !important;
     text-align: center !important;
     opacity: 1 !important;

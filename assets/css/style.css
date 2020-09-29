@@ -1,3 +1,15 @@
+.cor-vermelha {
+  color: #ED1C24;
+}
+
+.cor-cinza-escuro {
+  color: #384450;
+}
+
+.cor-amarela {
+  color: #F5C92F;
+}
+
 .start-header {
   box-shadow: 0 3px 8px 0 rgba(62, 80, 99, 0.55);
   transition: all 0.3s ease-out;
@@ -162,15 +174,15 @@
 
 .carousel-indicators li {
   margin: auto;
-  width: 20px !important;
-  height: 20px !important;
+  width: 15px !important;
+  height: 15px !important;
   border-radius: 100%;
 }
 
 .carousel-indicators .active {
   opacity: 1 !important;
   background-color: #fff;
-  border: 7px solid rgba(255, 255, 255, 0.5);
+  border: 5px solid rgba(255, 255, 255, 0.5);
 }
 
 .carousel-control-next {
@@ -187,8 +199,8 @@
 .carousel-control-prev {
   position: relative !important;
   z-index: 1 !important;
-  height: 40px !important;
-  width: 40px !important;
+  height: 30px !important;
+  width: 30px !important;
   color: #fff !important;
   text-align: center !important;
   opacity: 1 !important;
@@ -281,6 +293,11 @@ body {
   padding: 0 2rem;
 }
 
+.link {
+  color: #1257B9;
+  text-decoration: none;
+}
+
 footer {
   background-color: #0D1B2A;
   color: rgba(255, 255, 255, 0.6);
@@ -347,6 +364,7 @@ section.video-curso #videoApresentacao {
 
 section.tabela-curso {
   padding: 5rem 0;
+  color: #778DA9;
 }
 
 section.tabela-curso input[type=radio].radio-nivel {
@@ -395,8 +413,59 @@ section.tabela-curso input[type=radio]:checked.radio-nivel ~ label {
   opacity: 1;
 }
 
+section.tabela-curso .lista-cursos .list-group-item {
+  text-align: center;
+  border-color: #B5C0D1;
+  padding-top: 1rem;
+  padding-bottom: 1rem;
+}
+
+section.tabela-curso .lista-cursos .list-group-item.active {
+  z-index: 2;
+  color: #00B2EA;
+  background-color: #fff;
+  border-color: #B5C0D1;
+  font-weight: 600;
+}
+
+section.tabela-curso .lista-cursos .list-group-item.active::after {
+  font-family: "Font Awesome 5 Pro";
+  font-weight: 400;
+  content: '\f356';
+  position: absolute;
+  right: 15px;
+}
+
+section.tabela-curso .lista-cursos .list-group-item:first-child {
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
+}
+
+section.tabela-curso .lista-cursos .list-group-item:last-child {
+  border-bottom-right-radius: 10px;
+  border-bottom-left-radius: 10px;
+}
+
 section.tabela-curso .tabela-aulas {
   border: 1px solid #AAB8CA;
   border-radius: 10px;
   padding: 1rem 1rem 0 1rem;
+}
+
+section.tabela-curso .tabela-aulas .table {
+  color: #778DA9;
+}
+
+section.tabela-curso .tabela-aulas .table .nome-aula-tabela {
+  color: #384450;
+}
+
+section.tabela-curso .tabela-aulas .table .badge-aulas-free {
+  background-color: #06D6A0;
+  color: #fff;
+  height: 30px;
+  border-radius: 10px;
+  text-align: center;
+  line-height: 30px;
+  font-size: 14px;
 }

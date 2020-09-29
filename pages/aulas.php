@@ -40,7 +40,7 @@
         </div>
         <div class="row mt-4">
             <div class="col-12 col-lg-3 mb-4">
-                <div class="list-group" id="list-tab" role="tablist">
+                <div class="list-group lista-cursos" id="list-tab" role="tablist">
                     <a class="list-group-item list-group-item-action active" id="list-curso1-list" data-toggle="list" href="#list-curso1" role="tab" aria-controls="curso1">Curso 1</a>
                     <a class="list-group-item list-group-item-action" id="list-curso2-list" data-toggle="list" href="#list-curso2" role="tab" aria-controls="curso2">Curso 2</a>
                     <a class="list-group-item list-group-item-action" id="list-curso3-list" data-toggle="list" href="#list-curso3" role="tab" aria-controls="curso3">Curso 3</a>
@@ -52,45 +52,214 @@
                     <div class="tab-pane fade show active" id="list-curso1" role="tabpanel" aria-labelledby="list-curso1-list">
                         <div class="table-responsive tabela-aulas">
                             <table class="table table-sm">
-                                <thead>
-                                    <tr>
-                                        <th scope="col" class="border-top-0">#</th>
-                                        <th scope="col" class="border-top-0">First</th>
-                                        <th scope="col" class="border-top-0">Last</th>
-                                        <th scope="col" class="border-top-0">Handle</th>
-                                    </tr>
-                                </thead>
                                 <tbody>
                                     <tr>
-                                        <td>1</td>
-                                        <td>Mark</td>
-                                        <td>Otto</td>
-                                        <td>@mdo</td>
+                                        <td class="border-top-0">
+                                            <i class="fab fa-youtube cor-vermelha mr-2"></i> Aula 1 <label class="nome-aula-tabela ml-5">Nome da aula 1</label>
+                                        </td>
+                                        <td class="border-top-0 cor-amarela">
+                                            <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i>
+                                        </td>
+                                        <td class="border-top-0">
+                                            <a class="link" href="">Descrição</a>
+                                        </td>
+                                        <td class="border-top-0">
+                                            <div class="badge-aulas-free">Grátis</div>
+                                        </td>
+                                        <td class="border-top-0 text-right">
+                                            5:00 min
+                                        </td>
                                     </tr>
                                     <tr>
-                                        <td>2</td>
-                                        <td>Jacob</td>
-                                        <td>Thornton</td>
-                                        <td>@fat</td>
+                                        <td>
+                                            <i class="fab fa-youtube cor-vermelha mr-2"></i> Aula 2 <label class="nome-aula-tabela ml-5">Nome da aula 2</label>
+                                        </td>
+                                        <td class="cor-amarela"><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i></td>
+                                        <td>
+                                            <a class="link" href="">Descrição</a>
+                                        </td>
+                                        <td></td>
+                                        <td class="text-right">
+                                            5:00 min
+                                        </td>
                                     </tr>
                                     <tr>
-                                        <td>3</td>
-                                        <td>Larry the Bird</td>
-                                        <td>@twitter</td>
-                                        <td>@twitter</td>
+                                        <td>
+                                            <i class="fab fa-youtube cor-vermelha mr-2"></i> Aula 3 <label class="nome-aula-tabela ml-5">Nome da aula 3</label>
+                                        </td>
+                                        <td class="cor-amarela"><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i></td>
+                                        <td>
+                                            <a class="link" href="">Descrição</a>
+                                        </td>
+                                        <td>
+                                            <div class="badge-aulas-free">Grátis</div>
+                                        </td>
+                                        <td class="text-right">
+                                            5:00 min
+                                        </td>
                                     </tr>
                                 </tbody>
                             </table>
                         </div>
                     </div>
                     <div class="tab-pane fade" id="list-curso2" role="tabpanel" aria-labelledby="list-curso2-list">
-                        Tabela 2
+                        <div class="table-responsive tabela-aulas">
+                            <table class="table table-sm">
+                                <tbody>
+                                    <tr>
+                                        <td class="border-top-0">
+                                            <i class="fab fa-youtube cor-vermelha mr-2"></i> Aula 1 <label class="nome-aula-tabela ml-5">Nome da aula 1</label>
+                                        </td>
+                                        <td class="border-top-0 cor-amarela">
+                                            <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i>
+                                        </td>
+                                        <td class="border-top-0">
+                                            <a class="link" href="">Descrição</a>
+                                        </td>
+                                        <td class="border-top-0">
+                                            <div class="badge-aulas-free">Grátis</div>
+                                        </td>
+                                        <td class="border-top-0 text-right">
+                                            5:00 min
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>
+                                            <i class="fab fa-youtube cor-vermelha mr-2"></i> Aula 2 <label class="nome-aula-tabela ml-5">Nome da aula 2</label>
+                                        </td>
+                                        <td class="cor-amarela"><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i></td>
+                                        <td>
+                                            <a class="link" href="">Descrição</a>
+                                        </td>
+                                        <td></td>
+                                        <td class="text-right">
+                                            5:00 min
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>
+                                            <i class="fab fa-youtube cor-vermelha mr-2"></i> Aula 3 <label class="nome-aula-tabela ml-5">Nome da aula 3</label>
+                                        </td>
+                                        <td class="cor-amarela"><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i></td>
+                                        <td>
+                                            <a class="link" href="">Descrição</a>
+                                        </td>
+                                        <td>
+                                            <div class="badge-aulas-free">Grátis</div>
+                                        </td>
+                                        <td class="text-right">
+                                            5:00 min
+                                        </td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
                     </div>
                     <div class="tab-pane fade" id="list-curso3" role="tabpanel" aria-labelledby="list-curso3-list">
-                        Tabela 3
+                        <div class="table-responsive tabela-aulas">
+                            <table class="table table-sm">
+                                <tbody>
+                                    <tr>
+                                        <td class="border-top-0">
+                                            <i class="fab fa-youtube cor-vermelha mr-2"></i> Aula 1 <label class="nome-aula-tabela ml-5">Nome da aula 1</label>
+                                        </td>
+                                        <td class="border-top-0 cor-amarela">
+                                            <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i>
+                                        </td>
+                                        <td class="border-top-0">
+                                            <a class="link" href="">Descrição</a>
+                                        </td>
+                                        <td class="border-top-0">
+                                            <div class="badge-aulas-free">Grátis</div>
+                                        </td>
+                                        <td class="border-top-0 text-right">
+                                            5:00 min
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>
+                                            <i class="fab fa-youtube cor-vermelha mr-2"></i> Aula 2 <label class="nome-aula-tabela ml-5">Nome da aula 2</label>
+                                        </td>
+                                        <td class="cor-amarela"><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i></td>
+                                        <td>
+                                            <a class="link" href="">Descrição</a>
+                                        </td>
+                                        <td></td>
+                                        <td class="text-right">
+                                            5:00 min
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>
+                                            <i class="fab fa-youtube cor-vermelha mr-2"></i> Aula 3 <label class="nome-aula-tabela ml-5">Nome da aula 3</label>
+                                        </td>
+                                        <td class="cor-amarela"><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i></td>
+                                        <td>
+                                            <a class="link" href="">Descrição</a>
+                                        </td>
+                                        <td>
+                                            <div class="badge-aulas-free">Grátis</div>
+                                        </td>
+                                        <td class="text-right">
+                                            5:00 min
+                                        </td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
                     </div>
                     <div class="tab-pane fade" id="list-curso4" role="tabpanel" aria-labelledby="list-curso4-list">
-                        Tabela 4
+                        <div class="table-responsive tabela-aulas">
+                            <table class="table table-sm">
+                                <tbody>
+                                    <tr>
+                                        <td class="border-top-0">
+                                            <i class="fab fa-youtube cor-vermelha mr-2"></i> Aula 1 <label class="nome-aula-tabela ml-5">Nome da aula 1</label>
+                                        </td>
+                                        <td class="border-top-0 cor-amarela">
+                                            <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i>
+                                        </td>
+                                        <td class="border-top-0">
+                                            <a class="link" href="">Descrição</a>
+                                        </td>
+                                        <td class="border-top-0">
+                                            <div class="badge-aulas-free">Grátis</div>
+                                        </td>
+                                        <td class="border-top-0 text-right">
+                                            5:00 min
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>
+                                            <i class="fab fa-youtube cor-vermelha mr-2"></i> Aula 2 <label class="nome-aula-tabela ml-5">Nome da aula 2</label>
+                                        </td>
+                                        <td class="cor-amarela"><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i></td>
+                                        <td>
+                                            <a class="link" href="">Descrição</a>
+                                        </td>
+                                        <td></td>
+                                        <td class="text-right">
+                                            5:00 min
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>
+                                            <i class="fab fa-youtube cor-vermelha mr-2"></i> Aula 3 <label class="nome-aula-tabela ml-5">Nome da aula 3</label>
+                                        </td>
+                                        <td class="cor-amarela"><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i></td>
+                                        <td>
+                                            <a class="link" href="">Descrição</a>
+                                        </td>
+                                        <td>
+                                            <div class="badge-aulas-free">Grátis</div>
+                                        </td>
+                                        <td class="text-right">
+                                            5:00 min
+                                        </td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
                     </div>
                 </div>
             </div>
