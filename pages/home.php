@@ -194,8 +194,3 @@
         PÁGINA EM DESENVOLVIMENTO...
     </p>
 </div>
-<script>
-    window.onload = function() {
-        document.getElementById('banner').classList.add("d-none", "d-md-none", "d-lg-none");
-    };
-</script>
